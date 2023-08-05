@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" 
+elementFormDefault="qualified">
+<xs:element name="hipertext" type="hipertextType"/>  
+
+<xs:complexType name="hipertextType">
+    <xs:sequence>
+        <xs:element name = "autor" type = "autorType"/>
+        <xs:element name="pasma">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="pasmo" type="pasmoType" minOccurs="1" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autorType">
+    <xs:all>
+        <xs:element name = "imie"/>
+        <xs:element name = "nazwisko"/>
+    </xs:all>
+</xs:complexType>
+
+<xs:simpleType name="shortStringType">
+	<xs:restriction base="xs:string">
+		<xs:minLength value="1"></xs:minLength>
+		<xs:maxLength value="20"></xs:maxLength>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="ciekawostkaType">
+	<xs:restriction base="xs:string">
+		<xs:maxLength value="200"></xs:maxLength>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="longStringType">
+	<xs:restriction base="xs:string">
+        <xs:maxLength value="30"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="longlongStringType">
+	<xs:restriction base="xs:string">
+		<xs:minLength value="100"></xs:minLength>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name = "ocenaType">
+    <xs:restriction base="xs:double">
+        <xs:minInclusive value="0"></xs:minInclusive>
+        <xs:maxInclusive value="10"></xs:maxInclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+
+
+<xs:complexType name="pasmoType">
+		<xs:sequence>
+            <xs:element name = "nazwa_pasma">
+                <xs:complexType >
+                    <xs:simpleContent>
+                        <xs:extension base="shortStringType">
+                            <xs:attribute ref="polish_signs" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+			<xs:element name="szczyty">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="szczyt" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nazwa_szczytu" type="nazwa_szczytuType" />
+                                    <xs:element name="wysokosc" type="xs:int" />
+                                    <xs:element name="trudnosc" type="trudnoscType" />
+                                    <xs:element name="ocena" type = "ocenaType"/>
+                                    <xs:element name="widoki" type = "widokiType"/>
+                                    <xs:element name="opis" type = "longlongStringType"/>
+                                    <xs:element name="ciekawostka" type = "ciekawostkaType"/>
+                                    <xs:element name = "schroniska" type = "schroniskaType" minOccurs="0"/>
+			                        <xs:element ref="link" />
+                                    <xs:element ref="image" />
+                                </xs:sequence>
+                                <xs:attribute name="rank" use="required">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:nonNegativeInteger">
+                                            <xs:minInclusive value="1"></xs:minInclusive>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                             </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                 </xs:complexType>
+            </xs:element>
+		</xs:sequence>
+        <xs:attribute name="n" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:int">
+					<xs:minInclusive value="1"></xs:minInclusive>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="schroniskaType">
+  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+    <xs:element name="nazwa_schroniska" type="nazwa_schroniskaType" />
+  </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="nazwa_schroniskaType">
+  <xs:list itemType="xs:string"/>
+</xs:simpleType>
+
+
+
+<xs:element name="image" type="adressType"/>
+<xs:element name="link" type="adressType"/>
+<xs:complexType name="adressType">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="source" type="xs:anyURI" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+
+
+<xs:attribute name="polish_signs">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"></xs:enumeration>
+            <xs:enumeration value="no"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+
+<xs:complexType name="nazwa_szczytuType">
+                <xs:simpleContent>
+                    <xs:extension base="shortStringType">
+                       <xs:attribute name="polish_signs" use="required"/>
+                    </xs:extension>
+               </xs:simpleContent>
+       </xs:complexType>
+
+<xs:complexType name="trudnoscType">
+        <xs:simpleContent>
+            <xs:extension base="longStringType">
+                <xs:attribute name="hard" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="yes"></xs:enumeration>
+                            <xs:enumeration value="no"></xs:enumeration>
+                        </xs:restriction>
+		            </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="widokiType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="picturous" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="yes"></xs:enumeration>
+                            <xs:enumeration value="no"></xs:enumeration>
+                        </xs:restriction>
+		            </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+</xs:complexType>
+
+
+
+
+</xs:schema>

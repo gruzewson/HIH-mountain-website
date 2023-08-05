@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hipertext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="main.xsd">
+  <autor>
+    <imie>Marcel</imie>
+    <nazwisko>Grużewski</nazwisko>
+  </autor>
+    <pasma>
+        <pasmo n = "1">
+            <nazwa_pasma polish_signs = "no">Tatry</nazwa_pasma>
+            <szczyty>
+                <szczyt rank = "1">
+                      <nazwa_szczytu polish_signs = "no">Rysy</nazwa_szczytu>
+                      <wysokosc>2499</wysokosc>
+                      <trudnosc hard = "yes">bardzo trudny</trudnosc>
+                      <ocena>9.5</ocena>
+                      <widoki picturous = "yes"></widoki>
+                      <opis>
+                        Rysy dzielą się na trzy wierzchołki, z których najwyżej położony znajduje się w części słowackiej (2503 m. n.p.m.). Drugim co do wielkości jest wierzchołek północny, który zarazem jest najwyższym punktem Polski (2499 m. n.p.m.). Najniższy wierzchołek liczy sobie 2473 m n.p.m. Popularność Rysów wzrastała z roku na rok i obecnie są jednym z najczęściej odwiedzanych szczytów Tatr. Przy sprzyjającej pogodzie z wierzchołka można zobaczyć wspaniałą panoramę obejmującą blisko 100 innych szczytów górskich.
+                      </opis>
+                      <ciekawostka>Rysy zostały pierwszy raz zdobyte 30 lipca 1840 roku. Owego osiągnięcia dokonał Eduard Blásy (Słowak) wraz z przewodnikiem Jakobem Horvayem.</ciekawostka>
+                      <schroniska>
+                        <nazwa_schroniska>
+                          Chata pod Rysami
+                        </nazwa_schroniska>
+                        <nazwa_schroniska>
+                          Schronisko nad Morskim Okiem
+                        </nazwa_schroniska>
+                      </schroniska>
+                      <link source = "https://drytooling.com.pl/baza/gory/1512-rysy">https://drytooling.com.pl/baza/gory/1512-rysy</link>
+                    <image source = "http://drytooling.com.pl/images/artykuly/widok-z-galerii-gankowej.webp"></image>
+                </szczyt>
+                <szczyt rank = "2">
+                  <nazwa_szczytu polish_signs = "no">Giewont</nazwa_szczytu>
+                  <wysokosc>1894</wysokosc>
+                  <trudnosc hard = "yes">trudny</trudnosc>
+                  <ocena>8.7</ocena>
+                  <widoki picturous = "yes">bardzo ładne</widoki>
+                  <opis>
+                    Giewont jest jednym z najbardziej popularnych tatrzańskich szczytów. Owiany licznymi legendami, dostojnie króluje nad Zakopanem. Jest symbolem miasta jak również i całych Tatr. W sezonie na szlaki prowadzące na Śpiącego Rycerza wyruszają rzesze turystów, ustawiając się w sławnych już kolejkach, tuż pod kopułą szczytową. Chyba tylko Kasprowy Wierch oraz Morskie Oko bywają wówczas bardziej oblegane. W drodze na Giewont czeka na Was krótka sekwencja łańcuchów, nieco ekspozycji a na górze słynny krzyż oraz przepyszne widoki!
+                  </opis>
+                  <ciekawostka>Na samym wierzchołku stoi niewielka stalowa konstrukcja krzyża, który co jakiś czas sprowadza pioruny na szczyt.</ciekawostka>
+                  <schroniska>
+                    <nazwa_schroniska>
+                      schronisko na Hali Kondratowej
+                    </nazwa_schroniska>
+                  </schroniska>
+                  <link source = "https://hasajacezajace.com/giewont-szlak-opis/">https://hasajacezajace.com/giewont-szlak-opis/</link>
+                  <image source = "https://portaltatrzanski.pl/upload/article/11e05098f8e3f678e88ff0b8003b26b7.jpeg"></image>
+            </szczyt>
+                <szczyt rank = "3">
+                    <nazwa_szczytu polish_signs = "no">Kasprowy Wierch</nazwa_szczytu>
+                    <wysokosc>1987</wysokosc>
+                    <trudnosc hard = "yes">trudny</trudnosc>
+                    <ocena>7.4</ocena>
+                    <widoki picturous = "yes">ładne</widoki>
+                    <opis>
+                      Kasprowy Wierch – widokowy i łatwo dostępny, należy do czołówki najpopularniejszych turystycznych miejsc w Tatrach i to o każdej porze roku. Duża w tym zasługa kolejki linowej, która wywiezie nas na wysokość 1959 m n.p.m. Latem szczyt bywa oblegany nie tylko przez turystów spragnionych wrażeń z przejazdu kolejką, ale też tych, którzy chcą zaoszczędzić siły i rozpoczynają górską wędrówkę z grani Kasprowego Wierchu. Zimą, jak przystało na cieszący się sławą kultowej góry polskich narciarzy, dużo tu miłośników białego szaleństwa.
+                    </opis>
+                    <ciekawostka>Na samym wierzchołku stoi niewielka stalowa konstrukcja z dzwonem, który dawniej był używany do sygnalizacji przy słabej widoczności.</ciekawostka>
+                    <schroniska>
+                      <nazwa_schroniska>
+                        Schronisko na Hali Gąsienicowej
+                      </nazwa_schroniska>
+                      <nazwa_schroniska>
+                        Schronisko "Murowaniec"
+                      </nazwa_schroniska>
+                    </schroniska>
+                    <link source = "https://gorydlaciebie.pl/wyprawy/kasprowy-wierch-i-kolej-na-kasprowy-wierch/">https://gorydlaciebie.pl/wyprawy/kasprowy-wierch-i-kolej-na-kasprowy-wierch/</link>
+                    <image source = "https://www.pkl.pl/data/posts/29/_i7b7394a.jpg"></image>
+              </szczyt>
+            </szczyty>
+        </pasmo>
+        <pasmo n = "2">
+            <nazwa_pasma polish_signs = "no">Karkonosze</nazwa_pasma>
+            <szczyty>
+                <szczyt rank = "1">
+                      <nazwa_szczytu polish_signs = "yes">Śnieżka</nazwa_szczytu>
+                      <wysokosc>1603</wysokosc>
+                      <trudnosc hard = "yes">trudny</trudnosc>
+                      <ocena>7.0</ocena>
+                      <widoki picturous = "yes">bardzo ładne</widoki>
+                      <opis>
+                        Śnieżka górująca nad Karkonoszami od dawna intrygowała ludzi i przyciągała ciekawych świata wędrowców. Pierwszego wejścia na szczyt dokonano prawdopodobnie w połowie XV w. Kolejne wieki przyniosły Śnieżce coraz większą popularność. W XVIII wieku jej szczyt stał się jednym z najliczniej odwiedzanych w Europie. W sierpniu 1800 roku dotarł tu m.in. późniejszy prezydent Stanów Zjednoczonych – John Quincy Adams. Do nasileniu ruchu przyczyniła się budowa Kaplicy św. Wawrzyńca, którą ufundował hrabia Krzysztof Leopold Schaffgotsch, dla podkreślenia swoich praw do tych ziem. Poświęcenie kaplicy nastąpiło 10 sierpnia 1681 roku. Dziś dzień ten uznawany jest za święto przewodników i ludzi gór. Co roku na szczycie odprawiana jest msza święta, która przyciąga tłumy.
+                      </opis>
+                      <ciekawostka>Symbolem Śnieżki jest przypominający spodki i nazywany „latającymi talerzami” budynek Obserwatorium Meteorologicznego. Systematyczne obserwacje na Śnieżce trwają nieprzerwanie od 1880 roku.</ciekawostka>
+                      <schroniska>
+                        <nazwa_schroniska>
+                          Schronisko na Śnieżce
+                        </nazwa_schroniska>
+                        <nazwa_schroniska>
+                          Dom Śląski
+                        </nazwa_schroniska>
+                        <nazwa_schroniska>
+                          Schronisko Szrenica
+                        </nazwa_schroniska>
+                      </schroniska>
+                      <link source = "https://www.karpacz.pl/sniezka/at">https://www.karpacz.pl/sniezka/at</link>
+                      <image source = "https://karpaczskiarena.pl/wp-content/uploads/2019/03/dom-slaski-w-karkonoszach-233106-1140x450.jpg"></image>
+                </szczyt>
+                <szczyt rank = "2">
+                    <nazwa_szczytu polish_signs = "no">Wielki Szyszak</nazwa_szczytu>
+                    <wysokosc>1509</wysokosc>
+                    <trudnosc hard = "no">łatwy</trudnosc>
+                    <ocena>6.5</ocena>
+                    <widoki picturous = "no">przyzwoite</widoki>
+                    <opis>
+                      Wielki Szyszak to drugi, pod względem wysokości, szczyt - zaraz po Śnieżce (1602 m n.p.m.) - w naszej części Karkonoszy. Wielki Szyszak położony jest w zachodniej części Śląskiego Grzbietu, w sąsiedztwie Śnieżnych Kotłów, Śmielca i Łabskiego Szczytu. Wprawdzie, nie prowadzi na niego ani jeden szlak turystyczny, ale można na niego wejść od Czarnej Przełęczy po drodze wybudowanej z kamiennych tafli - drogę tę ufundowała rodzina Schaffgotschów. W 1888 r., na pamiątkę zjednoczenia krajów niemieckich, na wierzchołku postawiono pomnik cesarza Niemiec Wilhelma I - kamienna piramida z wyrytą literą W i posąg orła. Na nieszczęście, obecnie pomnik ten jest zrujnowany. Wierzchołkiem biegnie polsko-czeska granica.
+                    </opis>
+                    <ciekawostka>Szczyt ten nazywa się Wielki Szyszak dopiero od czasów powojennych, wcześniejsza nazwa to Wielkie Koło</ciekawostka>
+                    <link source = "https://www.karkonosze.pl/wielki-szyszak">https://www.karkonosze.pl/wielki-szyszak</link>
+                    <image source = "https://upload.wikimedia.org/wikipedia/commons/6/6b/2015_Wielki_Szyszak%2C_Karkonosze%2C_Sudety_1.jpg"></image>
+              </szczyt>
+            </szczyty>
+        </pasmo>
+    </pasma>
+</hipertext>
