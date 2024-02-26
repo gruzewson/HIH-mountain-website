@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(234, 236, 122);
+}
+
+main{
+   height: 93.2vh;
+}
+
+main > p{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 2rem 0;
+}

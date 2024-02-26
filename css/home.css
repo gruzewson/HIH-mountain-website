@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: url(/projekt_hih/img/tlo-2.jfif);
+		background-repeat:no-repeat;
+		background-attachment: fixed;
+		background-position-y: center;
+}
+
+main{
+	position: relative;
+	left: 50%;
+	width: 70%;
+	transform: translateX(-50%);
+	border-right: solid black;
+	border-left: solid black;
+	padding-top: 0;
+	font-size: 1.3rem;
+}
+
+
+main h3, h1{
+	margin-bottom: 3rem;
+	padding-top: 5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main h3{
+	font-size: 2rem;
+}
+
+main h4{
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.pasmo p, .pasmo ul, .pasmo li, .sources{
+	letter-spacing: 2px;
+	line-height: 25px;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+.description{
+	margin: 2rem;
+	width: 100%;
+}
+
+.AllContents{
+	background-color: rgb(136, 223, 238);
+	height: 100%;
+} 
+
+
+.goToTheTop, .goToTheLast{
+	text-align: center;
+    padding: 5px 7px;
+    background-color: #333;
+    font-size: 1.5rem;
+	transition: 0.2s;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.goToTheTop, .goToTheLast:hover{
+    background-color: royalblue;
+}
+
+img{
+	margin: 3rem;
+	margin-left: 10rem;
+	height: 25rem;
+	width: 50rem;
+}
+
+
+
